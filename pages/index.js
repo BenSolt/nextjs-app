@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+//import TodoHome from './todoHome';
 import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,12 +19,16 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-        <Link href="/about" className='navItem'>ABOUT</Link>
+
+          
+
+          <Link href="/about" className='navItem'>ABOUT</Link>
+          <Link href="/todoHome" className='navItem'>Todos</Link>
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.js</code>
           </p>
-         
+
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

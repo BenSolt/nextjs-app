@@ -1,3 +1,27 @@
 .navItem {
-    background-color: gray;
+    padding: 5px;
+    background-color: rgb(82, 82, 82);
+    color: white;
+}
+
+.navItem:hover {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+.buttonContainer {
+    margin-top: 20px;
+}
+button {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(42, 42, 42);
+    color: white;
 }
