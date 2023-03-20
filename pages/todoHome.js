@@ -68,8 +68,6 @@ export default function Home() {
                 
                 <div>
                     <button onClick={fetchTodos}>Get todos</button>
-                    <button onClick={fetchHello}>Get Hello</button>
-                    <button onClick={fetchBlog}>Get Blog</button>
                 </div>
 
                 <h2>Add Todo</h2>
