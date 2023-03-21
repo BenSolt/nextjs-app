@@ -19,10 +19,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.navbarContainer}>
-          <Link href="/about" className='navItem'>About</Link>
-          <Link href="/dogos" className='navItem'>Dogos</Link>
-          <Link href="/todoHome" className='navItem'>Todos</Link>
+        <div className="navbarContainer">
+          <Link href="/about" className='navItem'>ABOUT</Link>
+          <Link href="/dogos" className='navItem'>DOGOS</Link>
+          <Link href="/todoHome" className='navItem'>TODOS</Link>
         </div>
         <div className={styles.description}>
           <p>

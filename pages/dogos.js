@@ -31,7 +31,7 @@ export default function Dogos() {
         <div>
             <main className={styles.main}>
                 <div className={styles.navbarContainer}>
-                    <Link href="/" className='navItem'>Home</Link>
+                    <Link href="/" className='navItem'>HOME</Link>
                 </div>
                 <div>
 

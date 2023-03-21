@@ -6,10 +6,11 @@ export default function About() {
     return (
         <div>
             <main className={styles.main}>
-                <div className={styles.navbarContainer}>
-                    <Link href="/" className='navItem'>Home</Link>
+                <div className="navbarContainer">
+                    <Link href="/" className='navItem'>HOME</Link>
                 </div>
-                <div>
+
+                <div className="container">
                     <h2>ABOUT</h2>
                     <p>about paragraph</p>
                 </div>

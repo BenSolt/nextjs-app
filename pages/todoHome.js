@@ -60,20 +60,21 @@ export default function Home() {
     };
 
     return (
-            <div>  
-                <main className={styles.main}>
+        <div>
+            <main className={styles.main}>
                 <div className={styles.navbarContainer}>
-                <Link href="/" className='navItem'>Home</Link>
-                </div>
-                
-                <div>
-                    <button onClick={fetchTodos}>Get todos</button>
+                    <Link href="/" className='navItem'>HOME</Link>
                 </div>
 
-                <h2>Add Todo</h2>
-                <form onSubmit={handleSubmit}>
-                    <input type="text" onChange={handleChange} value={newTodo.todo} />
-                </form>
+                <div className="container">
+                    <button onClick={fetchTodos}>Get todos</button>
+
+                    <h4>Add Todo</h4>
+                    <form onSubmit={handleSubmit}>
+                        <input type="text" onChange={handleChange} value={newTodo.todo} />
+                    </form>
+                </div>
+
 
                 <ul>
                     list todo items
@@ -87,12 +88,13 @@ export default function Home() {
                             </li>
                         );
                     })}
-
-                    {hello.name}
-                    {blog.name}
-                    {blog.info}
                 </ul>
-                </main>
-            </div>
+            </main>
+
+            <div>
+
+        </div>
+        
+        </div>
     );
 }
