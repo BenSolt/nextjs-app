@@ -26,11 +26,6 @@ export default function Dogos() {
             });
     }, [breed]);
 
-    // const fetchTodos = async () => {
-    //     const res = await fetch("/api/todos");
-    //     const data = await res.json();
-    //     setPets(data);
-    // };
 
     return (
         <div>
@@ -39,26 +34,25 @@ export default function Dogos() {
                     <Link href="/" className='navItem'>Home</Link>
                 </div>
                 <div>
-                    <h2>DOGOS</h2>
-
-                    {/* <button onClick={fetchTodos}>Get todos</button> */}
 
                     <div className="container">
-                        {/* <input
-                            id="input"
-                            type="text"
-                            name={breed}
-                            onChange={handleChange}
-                            value={inputValue}
-                        /> */}
-                        {/* <button onClick={() => setBreed(inputValue)}>Submit</button>
+                        <h2>DOGOS</h2>
+                        <div>
+                            <input
+                                id="input"
+                                type="text"
+                                name={breed}
+                                onChange={handleChange}
+                                value={inputValue}
+                            />
+                            <button className='submitBtn' onClick={() => setBreed(inputValue)}>Submit</button>
 
-                        <button onClick={() => setBreed("mastiff")}>Mastiff</button>
-                        <button onClick={() => setBreed("labrador")}>Labrador</button>
+                            <button onClick={() => setBreed("mastiff")}>Mastiff</button>
+                            <button onClick={() => setBreed("labrador")}>Labrador</button>
+                            <button onClick={() => setBreed("mix")}>mix</button>
+                        </div>
 
-                        <button onClick={() => setBreed("mix")}>mix</button> */}
-
-                        <div className="entry">
+                        <div className="dog-card-container">
                             {pets.map((petUrl) => {
                                 return <PetCard key={petUrl} breed1={breed} imgUrl={petUrl} />;
                             })}
