@@ -14,18 +14,21 @@ export default function Home() {
         todo: "",
         completed: false,
     });
-    // ////////////////////////////////////////////////////
-    const fetchHello = async () => {
-        const res = await fetch("/api/hello");
-        const data = await res.json();
-        setHello(data);
+    const [toggle, setToggle] = useState(true);
+    const [color, setColor]= useState('red');
+
+    const toggleTodo = (e) => {
+
+        setToggle(!toggle)
+        console.log(toggle)
+        if (toggle) {
+            setColor('green')
+        } else {
+            setColor('red')
+        }
+        // console.log(color)
     };
-    const fetchBlog = async () => {
-        const res = await fetch("/api/blog");
-        const data = await res.json();
-        setBlog(data);
-    };
-    //////////////////////////////////////////////////////////
+
     const fetchTodos = async () => {
         const res = await fetch("/api/todos");
         const data = await res.json();
@@ -81,20 +84,23 @@ export default function Home() {
                     {todos.map((e) => {
                         return (
                             <li
-                                style={{ color: `${e.completed ? "green" : "red"}` }}
+                                //style={{ color: `${e.completed ? "green" : "red"}` }}
+                                style={{ color: color }}
                                 key={e.id}
+                                onClick={toggleTodo}
                             >
-                                {e.todo}:{e.completed}.
+                                {e.todo}:{e.completed}
                             </li>
                         );
                     })}
                 </ul>
+
             </main>
 
             <div>
 
-        </div>
-        
+            </div>
+
         </div>
     );
 }
